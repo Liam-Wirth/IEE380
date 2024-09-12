@@ -22,13 +22,11 @@ def calculate_mean_variance(pmf):
 
     return mean, variance
 
-
-
-
-
 def uniform_variance(a, b):
         "Parameters: a, b are the bounds of the uniform distribution"
-    return ((b - a) ** 2) / 12  
+    numerator = (b-a + 1)**2 - 1
+    denominator = 12 
+    return numerator / denominator
 
 def uniform_mean(a, b):
     "Parameters: a, b are the bounds of the uniform distribution"
