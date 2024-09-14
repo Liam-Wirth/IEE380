@@ -1,5 +1,5 @@
 #THIS IS A MICROPYTHON FILE
-
+import math
 def calculate_mean_variance(pmf):
     """
     Calculate the mean and variance from a given PMF.
@@ -31,3 +31,12 @@ def uniform_variance(a, b):
 def uniform_mean(a, b):
     "Parameters: a, b are the bounds of the uniform distribution"
     return (a + b) / 2
+
+
+
+def binomial_mean(n, p):
+    return n*p
+
+def binomial_std_dev(n, p):
+    return math.sq
+
