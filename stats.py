@@ -21,6 +21,9 @@ def binomial_std_dev(n, p):
 def binomial_variance(n, p):
     return n*p*(1-p)
 
+def standardize(x, mean, std_dev):
+    return (x - mean) / std_dev
+
 #if __name__ == "__main__":
 #    main()
 
@@ -50,20 +53,7 @@ def distributions():
             uniform_distrib()
         case '1': 
             # binomials()
-
-        case '2':
-
-            # poisson()
-        case '3':
-
-            # geometric()
-        case '4':
-
-            # bernoulli()
-        case '99':
-            return
-
-
+            print("")
 def uniform_distrib():
     print("Uniform Distributions:")
     print("0. Uniform Mean")
@@ -77,11 +67,4 @@ def uniform_distrib():
             a = float(input("Lower Bound"))
             b = float(input("Upper Bound"))
             print(uniform_mean(a,b))
-        case '1':
-
-
-
-        case '2':
-
-        case '3':
-
+        
