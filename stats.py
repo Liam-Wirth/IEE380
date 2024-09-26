@@ -24,6 +24,13 @@ def binomial_variance(n, p):
 def standardize(x, mean, std_dev):
     return (x - mean) / std_dev
 
+# permutation formula, n is the number of items we are choosing from, r is the number of items we are choosing
+def permutations(n, r):
+    return math.factorial(n) / math.factorial(n-r)
+
+def combinations(n, r): 
+    return math.factorial(n) / (math.factorial(r) * math.factorial(n-r))
+
 #if __name__ == "__main__":
 #    main()
 
